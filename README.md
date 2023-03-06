@@ -1,2 +1,2 @@
 # Python Exercises
-Programming Fundamentals
+ITC558 - Programming Fundamentals
