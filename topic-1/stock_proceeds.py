@@ -3,7 +3,7 @@ num_units_buy = 500
 num_units_sell = 500
 
 # Price paid and sold per share
-price_per_unit_buy = 25.04
+price_per_unit_buy = 45.04
 price_per_unit_sell = 36.06
 
 # Incoming proceeds and outgoings excluding commission
@@ -21,10 +21,12 @@ net_calc = float(receivings - price_paid - total_commission)
 # lambda expression to determine Profit or Loss
 p_or_l = lambda x: 'Profit: $' if net_calc >= 0.0 else 'Loss: -$'
 
+print('BUY')
 print('Price paid for stock', format(price_paid, '.2f'), sep=': $')
-print('BUY - Brokerage fees', format(commission_buy, '.2f'), sep=': $')
+print('Brokerage fees', format(commission_buy, '.2f'), sep=': $')
 
+print('\nSELL')
 print('Receivings on sale of stock', format(receivings, '.2f'), sep=': $')
-print('SELL - Brokerage fees', format(commission_sell, '.2f'), sep=': $')
+print('Brokerage fees', format(commission_sell, '.2f'), sep=': $')
 
-print(f"Net {p_or_l(net_calc)}{net_calc:,.2f}")
+print(f"\nNet {p_or_l(net_calc)}{abs(net_calc):,.2f}")
