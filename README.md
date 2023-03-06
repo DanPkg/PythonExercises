@@ -1,2 +1,2 @@
-# PythonExercises
-# Topic 1 - Programming Fundamentals
+PythonExercises
+Topic 1 - Programming Fundamentals
