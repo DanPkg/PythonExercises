@@ -3,7 +3,7 @@ num_units_buy = 500
 num_units_sell = 500
 
 # Price paid and sold per share
-price_per_unit_buy = 45.04
+price_per_unit_buy = 25.04
 price_per_unit_sell = 36.06
 
 # Incoming proceeds and outgoings excluding commission
