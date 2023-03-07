@@ -1,6 +1,6 @@
 
 # OPTION 1 - using dictionary
-def show_cost_of_ticket(user_ticket):
+def show_cost_of_ticket1(user_ticket):
         
     # Store cost of each ticket class in a dictionary
     ticket_classes_costs = {
@@ -14,12 +14,12 @@ def show_cost_of_ticket(user_ticket):
 user_ticket = str(input("Enter class of ticket (A, B, or C): "))
 
 print('Cost of Ticket Class ', user_ticket + ': $', 
-      format(show_cost_of_ticket(user_ticket), '.2f'), sep='')
+      format(show_cost_of_ticket1(user_ticket), '.2f'), sep='')
 
 
 
 # OPTION 2 - using decision structure (no error checking)
-def show_cost_of_ticket():
+def show_cost_of_ticket2():
     
     CLASS_A_COST = 50
     CLASS_B_COST = 30
@@ -37,4 +37,4 @@ def show_cost_of_ticket():
     print('Cost of Ticket Class ', user_ticket + ': $', 
           format(cost_of_ticket, '.2f'), sep='')
         
-show_cost_of_ticket()
+show_cost_of_ticket2()
