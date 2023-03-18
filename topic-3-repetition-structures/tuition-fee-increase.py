@@ -20,7 +20,7 @@ for year in range(1, years + 1):
     
     for semester in range(1, semesters + 1):
     
-        current_fee += (current_fee * fee_increase)
+        current_fee += (current_fee * FEE_INCREASE)
         print('Year ' + str(year) + ' - Semester ' + str(semester), ' = $', 
                   format(current_fee, '.2f'), sep='')
 
